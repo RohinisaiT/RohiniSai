@@ -17,7 +17,7 @@ constructor(private http: HttpClient) { }
     return this.http.post(this.APIUrl+'/addReview', val);
   }
 
-  getReview(val: any): Observable<any>{
+  getReview(val: any): any{
     return this.http.get<any>(this.APIUrl+'/getReview?id='+val);
   }
 
